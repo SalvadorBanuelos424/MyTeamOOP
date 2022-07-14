@@ -1,9 +1,11 @@
-# Simple_README_generator
+# MyTeamOOP
 
   ![Badge](https://img.shields.io/badge/License-${license}-blue)
 
   ## Description
-  Creating a README markdown page for your programs has never been easier.  Answer simple questions about your project and this App will generate a README automatically.
+  With this application, you can auto generate a html page of your team members.  By answering questions about your team once prompted in the terminal, it will create a nice neat index.html file with the data user input.
+
+![image of application](./assets/image/OOP.jpg)
 
   ## Table of Contents
   - [Description](#description)
@@ -20,7 +22,7 @@
   Clone git repository, type in terminal "npm i" to install node-modules
 
   ## Usage
-  After installation in terminal type "node index.js" to begin, answer the questions with information regarding your APP.
+  After installation in terminal type "node app.js" to begin, answer the questions with information regarding your TEAM.
 
   ## License
     This program is licensed by MIT.

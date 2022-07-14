@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(252, 223, 252)
+}
+.header{
+    background-color: darksalmon;
+    color: white;
+    text-align: center;
+}
+.container{
+display: flex;
+flex-wrap: wrap;
+}
+.card {
+    background-color: rgb(221, 244, 244);
+    border: 1px solid rgb(50, 35, 35);
+    width: 250px;
+    height: 260px;
+    text-align: center;
+    margin: 15px;
+}
+.name{
+    border-bottom: 2px dotted rgb(196, 75, 75);
+    background-color: rgb(216, 26, 203);
+    color: white;
+}
+.id, .email, .extra{
+    text-align: left;
+    margin: 28px;
+    border-bottom: 1px dotted black;
+}

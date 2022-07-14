@@ -2,38 +2,44 @@ const generateSite = (team) => {
   const html = [];
   const generateManager = manager => {
     return `
+    <div class="container">
     <div class="card">
-      <h3 class="name">${manager.name}</h3>
-      <h3 class="id"${manager.id}</h3>
-      <h4 class="email">${manager.email}</h4>
-      <h4 class="office">${manager.office}</h4>
+      <h2 class="name">${manager.name}&#9749;</h2>
+      <h3 class="id">Employee ID# ${manager.id}</h3>
+      <h4 class="email" id="email"><a href="mailto:${manager.email}">${manager.email}</a></h4>
+      <h4 class="extra">Office: ${manager.office}</h4>
+    </div>
     </div>
     `;
     
   }
   const generateEngineer = engineer => {
-  return`
+    return`
+    <div class="container">
     <div class="card">
-      <h3 class="name">${engineer.name}</h3>
-      <h3 class="id"${engineer.id}</h3>
-      <h4 class="email">${engineer.email}</h4>  href="mailto:${engineer.email}">${engineer.email}<
-      <h4 class="office">${engineer.github}</h4>  href="https://github.com/${engineer.githubUsername}">${engineer.githubUsername}<
-    </div>`;
- 
+      <h2 class="name">${engineer.name}&#128187;</h2>
+      <h3 class="id">Employee ID# ${engineer.id}</h3>
+      <h4 class="email" id="email"><a href="mailto:${engineer.email}">${engineer.email}</a></h4>
+      <h4 class="extra" ><a href="https://github.com/${engineer.github}">github.com/${engineer.github}</a></h4>
+    </div>
+    </div>
+    `;
   }
   const generateIntern = intern => {
     return`
+    <div class="container">
     <div class="card">
-      <h3 class="name">${intern.name}</h3>
-      <h3 class="id"${intern.id}</h3>
-      <h4 class="email">${intern.email}</h4>
-      <h4 class="office">${intern.school}</h4>
-    </div>`;
+      <h2 class="name">${intern.name}&#127979;</h2>
+      <h3 class="id">Employee ID# ${intern.id}</h3>
+      <h4 class="email" id="email"><a href="mailto:${intern.email}">${intern.email}</a></h4>
+      <h4 class="extra">school: ${intern.school}</h4>
+    </div>
+    </div>
+    `;
   }
 
-
-  html.push(team.filter((employee)=> employee.getRole() === "Engineer").map((engineer)=> generateEngineer(engineer)));
   html.push(team.filter((employee)=> employee.getRole() === "Manager").map((manager)=> generateManager(manager)));
+  html.push(team.filter((employee)=> employee.getRole() === "Engineer").map((engineer)=> generateEngineer(engineer)));
   html.push(team.filter((employee)=> employee.getRole() === "Intern").map((intern)=> generateIntern(intern)));
 
 
@@ -49,8 +55,8 @@ module.exports = team => {
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="style.css">
-      <title>Portfolio Demo</title>
+      <link rel="stylesheet" href="/src/style.css">
+      <title>MyTeamOOP</title>
     </head>
     <body>
       <h1 class="header">My Team by OOP</h1>
