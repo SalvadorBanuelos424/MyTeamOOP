@@ -16,8 +16,8 @@ const generateSite = (team) => {
     <div class="card">
       <h3 class="name">${engineer.name}</h3>
       <h3 class="id"${engineer.id}</h3>
-      <h4 class="email">${engineer.email}</h4>
-      <h4 class="office">${engineer.github}</h4>
+      <h4 class="email">${engineer.email}</h4>  href="mailto:${engineer.email}">${engineer.email}<
+      <h4 class="office">${engineer.github}</h4>  href="https://github.com/${engineer.githubUsername}">${engineer.githubUsername}<
     </div>`;
  
   }
@@ -31,17 +31,6 @@ const generateSite = (team) => {
     </div>`;
   }
 
-  // for (let i = 0; i < team.length; i++) {
-  //   if (team[i].getRole() === "Manager") {
-  //       generateManager(team[i]);
-  //   }
-  //   if (team[i].getRole() === "Engineer") {
-  //       generateEngineer(team[i]);
-  //   }
-  //   if (team[i].getRole() === "Intern") {
-  //       generateIntern(team[i]);
-  //   }
-  // }
 
   html.push(team.filter((employee)=> employee.getRole() === "Engineer").map((engineer)=> generateEngineer(engineer)));
   html.push(team.filter((employee)=> employee.getRole() === "Manager").map((manager)=> generateManager(manager)));
