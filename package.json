@@ -24,6 +24,9 @@
     "url": "https://github.com/SalvadorBanuelos424/MyTeamOOP/issues"
   },
   "homepage": "https://github.com/SalvadorBanuelos424/MyTeamOOP#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  },
   "devDependencies": {
     "jest": "^28.0.1"
   }
