@@ -10,21 +10,21 @@ test('for if intern-object has constructor-values', () => {
 });
 
 test('for intern name constructor-value', () => {
-    expect(intern.getName()).toBe('sal');
+    expect(intern.getName()).toBe();
 });
 
 test('for intern id constructor value', () => {
-    expect(intern.getId()).toBe('123');
+    expect(intern.getId()).toBe();
 });
 
 test('for intern email constructor value', () => {
-    expect(intern.getEmail()).toBe('sal@mail.com');
+    expect(intern.getEmail()).toBe();
 });
 
 test('for intern school constructor value', () => {
-    expect(intern.getSchool()).toBe('UCR');
+    expect(intern.getSchool()).toBe();
 });
 
 test('for intern role constructor value', () => {
-    expect(intern.getRole()).toBe('Intern');
+    expect(intern.getRole()).toBe();
 });

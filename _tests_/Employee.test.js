@@ -9,17 +9,17 @@ test('for if employee-object has constructor-values', () => {
 });
 
 test('for employee name constructor-value', () => {
-    expect(employee.getName()).toBe('sal');
+    expect(employee.getName()).toBe();
 });
 
 test('for employee id constructor value', () => {
-    expect(employee.getId()).toBe('123');
+    expect(employee.getId()).toBe();
 });
 
 test('for employee email constructor value', () => {
-    expect(employee.getEmail()).toBe('sal@mail.com');
+    expect(employee.getEmail()).toBe();
 });
 
 test('for employee role constructor value', () => {
-    expect(employee.getRole()).toBe('Employee');
+    expect(employee.getRole()).toBe();
 });

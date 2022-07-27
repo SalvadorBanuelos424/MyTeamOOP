@@ -10,21 +10,21 @@ test('for if engineer-object has constructor-values', () => {
 });
 
 test('for engineer name constructor-value', () => {
-    expect(engineer.getName()).toBe('sal');
+    expect(engineer.getName()).toBe();
 });
 
 test('for engineer id constructor value', () => {
-    expect(engineer.getId()).toBe('123');
+    expect(engineer.getId()).toBe();
 });
 
 test('for engineer email constructor value', () => {
-    expect(engineer.getEmail()).toBe('sal@mail.com');
+    expect(engineer.getEmail()).toBe();
 });
 
 test('for engineer github constructor value', () => {
-    expect(engineer.getGithub()).toBe('salhub');
+    expect(engineer.getGithub()).toBe();
 });
 
 test('for engineer role constructor value', () => {
-    expect(engineer.getRole()).toBe('Engineer');
+    expect(engineer.getRole()).toBe();
 });
